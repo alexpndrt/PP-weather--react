@@ -1,6 +1,6 @@
 # 🌤️ Weather App
 
-A simple and responsive weather application built with **React**. This project was developed during a formation "Ecole du web" to strengthen my front-end development skills and work with APIs.
+A simple and responsive weather application built with **React**. This project was developed during a formation [École du Web](https://www.ecole-du-web.net/) to strengthen my front-end development skills and work with APIs.
 
 ## 📖 Description
 
