@@ -10,7 +10,7 @@ function App() {
   const [errorInfo, setErrorInfo] = useState(null);
 
   useEffect(() => {
-    fetch(`http://api.airvisual.com/v2/nearest_cit?key=${API_KEY}`)
+    fetch(`http://api.airvisual.com/v2/nearest_city?key=${API_KEY}`)
       .then((response) => {
         console.log("Response received from API:", response);
         // 400 - 499 : Erreur clients
