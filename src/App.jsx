@@ -26,19 +26,24 @@ function App() {
 
   return (
     <main>
-      <div className="loader-container">
+      <div className={`loader-container ${!weatherData && "active"}`}>
         <img src={loader} alt="loading icon" />
       </div>
-      <p className="city-name">Paris</p>
-      <p className="country-name">France</p>
-      <p className="temperature">20°C</p>
-      <div className="info-icon-container">
-        <img
-          src="../public/icons/01d.svg"
-          className="info-icon"
-          alt="weather icon"
-        />
-      </div>
+
+      {weatherData && (
+        <>
+          <p className="city-name">{weatherData.city}</p>
+          <p className="country-name">{weatherData.country}</p>
+          <p className="temperature">{weatherData.temperature}°C</p>
+          <div className="info-icon-container">
+            <img
+              src={`../public/icons/${weatherData.iconId}.svg`}
+              className="info-icon"
+              alt="weather icon"
+            />
+          </div>
+        </>
+      )}
     </main>
   );
 }
